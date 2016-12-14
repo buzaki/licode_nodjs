@@ -49,7 +49,7 @@ app.use(function(req, res, next) {
 N.API.init(config.nuve.superserviceID, config.nuve.superserviceKey, 'http://lic4.id3m.net:3000/');
 
 var defaultRoom;
-var defaultRoomName = 'basicExampleRoom';
+var defaultRoomName = 'toty';
 
 var getOrCreateRoom = function (roomName, callback) {
 
