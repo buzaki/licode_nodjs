@@ -1,29 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Licode Basic Example</title>
+<title>ديجي فويس</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <script type="text/javascript" src="assets/js/core.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="zassets/js/core.js"></script>
+    <script type="text/javascript" src="zassets/js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   </head>
   <body>
-<nav class="navbar navbar-light bg-faded">
-  <a class="navbar-brand" href="#">
-    <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-    Bootstrap
+  
+  <div id="home"><nav class="navbar navbar-light bg-faded">
+      <button onclick="location.href='test.html'" class="btn btn-outline-success"  type="button">اختبار الإتصال</button>
+      <button onclick="window.location.href=window.location.href'" class="btn btn-outline-success" type="button">تحديث الصفحه</button>
+     <img class="over" src="assets/Browser-Icons-Large.png" width="110" height="30" alt="Chrome & Firefox">
+  <a class="navbar-brand" href="index.html">
+    <img dir="ltr" class="over" src="assets/logo.png" widwth="30" heiwght="30"  class="d-inline-block align-top" alt="Digivoice.NET">
+
   </a>
 </nav>
-
-    <button id="testConnection" onclick="testConnection()">اختبار الأتصال للسرفر</button>
+</div>
     <div  id="myVideo" style="width:320px; height: 240px;"></div>
+
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/tether.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+
