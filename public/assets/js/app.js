@@ -1,4 +1,3 @@
-/* globals Erizo */
 'use strict';
 var serverUrl = '/';
 var localStream, room, recording, recordingId;
@@ -56,9 +55,6 @@ window.onload = function () {
                 data: true,
                 screen: screen,
                 videoSize: [640, 480, 640, 480]};
-  // If we want screen sharing we have to put our Chrome extension id.
-  // The default one only works in our Lynckia test servers.
-  // If we are not using chrome, the creation of the stream will fail regardless.
   if (screen){
     config.extensionId = 'okeephmleflklcdebijnponpabbmmgeo';
   }
@@ -109,6 +105,7 @@ window.onload = function () {
         var stream = streamEvent.stream;
         var div = document.createElement('div');
         div.setAttribute('style', 'width: 320px; height: 240px;');
+        div.setAttribute("class", "container");
         div.setAttribute('id', 'test' + stream.getID());
 
         document.body.appendChild(div);
