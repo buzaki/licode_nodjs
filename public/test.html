@@ -6,8 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <script type="text/javascript" src="zassets/js/core.js"></script>
-    <script type="text/javascript" src="zassets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/core.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/test.js"></script>
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -15,7 +17,7 @@
   <body>
   
   <div id="home"><nav class="navbar navbar-light bg-faded">
-      <button onclick="location.href='test.html'" class="btn btn-outline-success"  type="button">اختبار الإتصال</button>
+      <button onclick="window.location.href=window.location.href" class="btn btn-outline-success"  type="button">اختبار الإتصال</button>
       <button onclick="location.href='demo.html'" class="btn btn-outline-success" type="button">تجربة الشات</button>
      <img class="over" src="assets/Browser-Icons-Large.png" width="110" height="30" alt="Chrome & Firefox">
   <a class="navbar-brand" href="index.html">
@@ -25,6 +27,16 @@
 </nav>
 </div>
 
+    <div class="containter">
+      <p>هذه الصفحه لاختبار اتصالك بالسرفر</p>
+      <textarea id="messages" class="containter" rows="5" cols="80"></textarea>
+    </div>
+    <div>
+      <p>اختبار الكاميرا الخاصه بجهازك بشكل داخلي</p>
+      <div class="containter" id="my_local_video" style="width:320px; height: 240px;"></div>
+      <p>اختبار بث الكاميرا من خلال السرفر </p>
+      <div class="containter" id="my_subscribed_video" style="width:320px; height: 240px;"></div>
+    </div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="assets/js/jquery.min.js"></script>
