@@ -109,6 +109,7 @@ window.onload = function () {
         var stream = streamEvent.stream;
         var div = document.createElement('div');
         div.setAttribute('style', 'width: 320px; height: 240px;');
+        div.setAttribute("class", "container");
         div.setAttribute('id', 'test' + stream.getID());
 
         document.body.appendChild(div);
